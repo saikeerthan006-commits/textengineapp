@@ -1,0 +1,3 @@
+This document provides a quick check on material conductivity.
+Alpha Demo
+Conductivity depends on the material.

@@ -1,0 +1,11 @@
+export type Product = "engine" | "dev";
+export type AgentStatus = "idle" | "connecting" | "streaming" | "complete" | "error";
+export type ActivityEvent = { type: "activity"; id: string; message: string; status: "running" | "complete" | "error" };
+export type DeltaEvent = { type: "delta"; content: string };
+export type FinalResponseEvent = { type: "final"; content: string };
+export type ErrorEvent = { type: "error"; message: string };
+export type CompletionEvent = { type: "done" };
+export type Artifact = { id: string; artifact_type: string; filename: string; download_url: string; language?: string };
+export type ArtifactEvent = { type: "artifact"; artifact: Artifact };
+export type AgentEvent = ActivityEvent | DeltaEvent | FinalResponseEvent | ErrorEvent | CompletionEvent | ArtifactEvent;
+export type Message = { id: string; role: "user" | "assistant"; content: string; activities: ActivityEvent[]; artifacts?: Artifact[]; attachments?: string[]; status: AgentStatus };

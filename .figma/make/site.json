@@ -1,0 +1,11 @@
+{
+  "title": "TexEngine",
+  "description": "Engage users with a professional chatbot interface featuring model selection and a search bar, enhancing interaction and accessibility for seamless communication.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

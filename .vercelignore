@@ -1,0 +1,13 @@
+node_modules
+dist
+.env*
+**/.env*
+backend/workspace
+**/__pycache__
+**/*.pyc
+.tmp-*
+*.log
+.git
+.plugins
+.opencode-skills
+.figma/design-context
